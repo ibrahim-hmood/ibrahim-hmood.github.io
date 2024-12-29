@@ -1,0 +1,54 @@
+
+/*Design style for a project image*/
+.project_photo
+{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 25px;
+    padding-right: 5px;
+}
+
+/*Container for all projects*/
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Individual project "item" (contains image and name in html page)*/
+.item
+{
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project_name
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    border-radius: 25px;
+}
+
+.item:hover .project_name
+{
+    max-width: 150px;
+    opacity: 1;
+}
+
+.item:hover .project_photo
+{
+    max-width: 350px;
+    max-height: 350px;
+}
