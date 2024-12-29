@@ -1,0 +1,110 @@
+/*Use the Nasalization font*/
+@font-face {
+    font-family: 'nasalization';
+    src: url("../assets/font.otf") format("opentype");
+}
+
+/*Style of entire tab element*/
+.tab
+{
+    overflow: hidden;
+    border: none;
+    background-color: #F93D3A;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/*The style of each button inside the tab element*/
+.tab button
+{
+    font-family: 'nasalization';
+    font-style: normal;
+    width: 20%;
+    margin: 0 auto;
+    background-color: inherit;
+    color: white;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/*When button is hovered over, background color should change*/
+.tab button:hover
+{
+    background-color: #C82D27;
+}
+
+/*Do the same when it is clicked on*/
+.tab button:active
+{
+    background-color: #C82D27;
+}
+
+/*Style the content of each tab*/
+.tabcontent
+{
+    font-family: 'nasalization';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    margin-top: 20px;
+    border: none;
+    background-color: #D22E2A;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+
+    padding-bottom: calc(20% + 7%);
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+page_title
+{
+    font-family: 'nasalization';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20pt;
+    float: none;
+}
+
+.profile_photo
+{
+    max-width: 15%;
+    max-height: 15%;
+    border-radius: 25px;
+    float: left;
+    src: url("../assets/index.png");
+}
+
+.profile_description
+{
+    float: left;
+    text-align: left;
+    align-content: left;
+    margin-left: 25px;
+}
+
+li
+{
+    display: list-item;
+    float: none;
+    text-align: left;
+}
+
+ul
+{
+    float: left;
+}
+
+body
+{
+    background-color: #F93D3A;
+}
