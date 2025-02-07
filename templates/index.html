@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <title>Ibrahim Hmood: Software Engineer</title>
-        <link rel="stylesheet" href="assets/css/index.css">
-        <link rel="stylesheet" href="assets/css/animations.css">
-        <script src="assets/js/index.js"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='./assets/css/index.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='./assets/css/animations.css')}}">
+        <script src="{{url_for('static', filename='./assets/js/index.js')}}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
@@ -21,7 +21,7 @@
             <!--Home page-->
             <page_title>Ibrahim Hmood: Software Engineer</page_title>
             <br></br>
-            <img class="profile_photo" src="assets/photos/index.png">
+            <img class="profile_photo" src="{{url_for('static', filename='./assets/photos/index.png')}}">
             <p class="profile_description">
                 Dedicated software engineer<br>have both an Associate of Science and a Bachelor's of Science in Software Engineering.
             </p>
@@ -31,7 +31,7 @@
             <!--About me page-->
             <page_title>About me</page_title>
             <br></br>
-            <img class="profile_photo" src="assets/photos/index.png">
+            <img class="profile_photo" src="{{url_for('static', filename='./assets/photos/index.png')}}">
             <p class="profile_description">
                 My name is Ibrahim Hmood, pronounced Ee-bra-heem Ha-mood. <br> I have two degrees, one of which is from Northern Arizona University, the other is <br>
                 from Glendale Community College.
@@ -60,22 +60,22 @@
             <!--All of my projects-->
             <page_title>My projects</page_title>
             <br></br>
-            <img class="profile_photo" src="assets/photos/index.png">
+            <img class="profile_photo" src="{{url_for('static', filename='./assets/photos/index.png')}}">
             <div class="container">
                 <div class="item" url="https://github.com/IbisOS/ibisos">
-                    <img class="container project_photo" src="assets/photos/ibisos.png">
+                    <img class="container project_photo" src="{{url_for('static', filename='./assets/photos/ibisos.png')}}">
                     <div class="project_name">IbisOS</div>
                 </div>
                 <div class="item" url="https://www.ceias.nau.edu/capstone/projects/CS/2024/LunarPitPatrol_S24/index.html">
-                    <img class="container project_photo" src="assets/photos/craterstats.png">
+                    <img class="container project_photo" src="{{url_for('static', filename='./assets/photos/craterstats.png')}}">
                     <div class="project_name">CraterStats: Capstone</div>
                 </div>
                 <div class="item" url="https://www.github.com/1dime/VRify">
-                    <img class="container project_photo" src="assets/photos/vrify.png">
+                    <img class="container project_photo" src="{{url_for('static', filename='./assets/photos/vrify.png')}}">
                     <div class="project_name">VRify</div>
                 </div>
                 <div class="item" url="https://www.github.com/indie-dev/PyScriptEngine">
-                    <img class="container project_photo" src="assets/photos/pyscriptengine.png">
+                    <img class="container project_photo" src="{{url_for('static', filename='./assets/photos/pyscriptengine.png')}}">
                     <div class="project_name">PyScriptEngine</div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <!--My contact information-->
             <page_title>My contact information</page_title>
             <br></br>
-            <img class="profile_photo" src="assets/photos/index.png">
+            <img class="profile_photo" src="{{url_for('static', filename='./assets/photos/index.png')}}">
             <ul>
                 <li>E-mail: ibrahim.hmood99@gmail.com</li>
                 <li>Phone number: (936) 628 - 7601</li>
