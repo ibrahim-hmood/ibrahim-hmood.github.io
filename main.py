@@ -5,6 +5,7 @@ app = Flask(__name__)
 #Checks if device is mobile
 @app.route("/is_mobile")
 def is_mobile():
+    #Check if iphone, android, or blackberry are in connection user agent
     devices = ["iphone", "android", "blackberry"]
     agent = request.headers.get('User-Agent').lower()
     for device in devices:
@@ -23,11 +24,10 @@ def mobile():
 @app.route("/")
 def index():
     #Check if device is mobile
-    print(is_mobile())
     if(is_mobile()):
         return mobile()
     #Just render main index
     return render_template("index.html")
 
 if(__name__ == "__main__"):
-    app.run(debug = True)
+    app.run(debug = True, host="0.0.0.0")

@@ -12,11 +12,12 @@
 {
     overflow: hidden;
     border: none;
-    background-color: #F93D3A;
+    background-color: #e03634;
     border-radius: 25px;
     text-align: left;
     align-content: left;
     align-items: left;
+    z-index: 1;
 }
 
 /*The style of each button inside the tab element*/
@@ -27,7 +28,7 @@
     font-style: normal;
     height: 20%;
     width: 100%;
-    background-color: inherit;
+    background-color: #e03634;
     color: white;
     float: none;
     border: none;
@@ -61,7 +62,7 @@
     display: flex;
     margin-top: 20px;
     border: none;
-    background-color: #D22E2A;
+    background-color: #e03634;;
     color: white;
     border-radius: 25px;
     text-align: center;
@@ -121,6 +122,6 @@ ul
 
 body
 {
-    background-color: #F93D3A;
+    background-color: #e03634;
     display: flex;
 }

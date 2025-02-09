@@ -23,7 +23,23 @@
     }
 }
 
+@keyframes slide_to_right
+{
+    to {
+        transform: translateX(150px);
+    }
+}
 
+@keyframes slide_to_left
+{
+    from {
+        transform: translateX(150px);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
 
 .animate_slide_up_center
 {
@@ -35,4 +51,16 @@
 {
     /*Slide up off screen*/
     animation: slide_up_offscreen 0.5s ease-out;
+}
+
+.animate_sliding_right
+{
+    /*Slide to the right*/
+    animation: slide_to_right 0.5s forwards;
+}
+
+.animate_sliding_left
+{
+    /*Slide to the left*/
+    animation: slide_to_left 0.5s forwards;
 }
