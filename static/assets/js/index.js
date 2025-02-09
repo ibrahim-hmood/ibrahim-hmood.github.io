@@ -85,11 +85,11 @@ function getMobileContent()
     {
         if(this.readyState == 4 && this.status == 200)
         {
-            document.body.innerHTML = xhr.responseXML;
+            document.documentElement.innerHTML = xhr.responseText;
         }
     };
 
-    xhr.open("GET", "https://raw.githubusercontent.com/ibrahim-hmood/ibrahim-hmood.github.io/refs/heads/main/templates/mobile.html", false);
+    xhr.open("GET", "https://raw.githubusercontent.com/ibrahim-hmood/ibrahim-hmood.github.io/refs/heads/main/mobile.html", false);
     xhr.send();
 }
 
@@ -100,7 +100,7 @@ window.mobileCheck = function() {
     return check;
 };
 
-if(window.mobileCheck())
+if(!window.mobileCheck())
 {
     //Try and load the mobile website
     getMobileContent();
