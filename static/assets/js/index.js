@@ -100,7 +100,7 @@ window.mobileCheck = function() {
     return check;
 };
 
-if(!window.mobileCheck())
+if(window.mobileCheck())
 {
     //Try and load the mobile website
     getMobileContent();
